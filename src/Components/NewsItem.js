@@ -13,12 +13,14 @@ export default class NewsItem extends Component {
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
             <p className="card-text"><small className="text-muted">Written by {author?author:"Unknown"} on {date}</small></p>
-            <p className="badge rounded-pill bg-dangerSS">{source}</p>
+            <p className="badge rounded-pill bg-danger">{source}</p>
 
             <div><a
-              rel="noreferrer"
+              
               href={newsUrl}
               target="_blank"
+              rel="noopener noreferrer" 
+              
               className="btn btn-primary"
             >
            
